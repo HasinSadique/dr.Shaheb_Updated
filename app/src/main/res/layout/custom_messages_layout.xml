@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/BlurImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/blurimages"/>
+
+    <TextView
+        android:id="@+id/receiver_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/reciever_message_layout"
+        android:text="receiver messages here"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/sender_messsage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="@+id/receiver_message_text"
+        android:background="@drawable/sender_messge_layout"
+        android:text="sender messages here"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

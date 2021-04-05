@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "591338546052",
+    "firebase_url": "https://drshaheb.firebaseio.com",
+    "project_id": "drshaheb",
+    "storage_bucket": "drshaheb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591338546052:android:f13e5fd7cd5ceec1e433d1",
+        "android_client_info": {
+          "package_name": "com.lict.android.healthiswealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591338546052-f7v5igjfo1otek50jhfjltsu1tgtft2i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lict.android.healthiswealth",
+            "certificate_hash": "c561a2de18a380e8925f189c9df1b8ee74aecbd9"
+          }
+        },
+        {
+          "client_id": "591338546052-94esn2nhid1rirjvjblvhbe5a2tdo2le.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGjTsDP_2i38ePMpGGG1naxrSlLWXrOb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591338546052-94esn2nhid1rirjvjblvhbe5a2tdo2le.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

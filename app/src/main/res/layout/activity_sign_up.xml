@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/BlurImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/backgroundwallpaper" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:id="@+id/TextViewAreYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register as"
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:textColor="#000000"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ButtonPatient"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Patient"
+                android:textSize="25sp"
+                android:onClick="Patient"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:background="@drawable/roundedbutton"/>
+
+            <Button
+                android:id="@+id/ButtonDoctor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Doctor"
+                android:text="Doctor"
+                android:textSize="25sp"
+                android:layout_marginStart="5dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/roundedbutton"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

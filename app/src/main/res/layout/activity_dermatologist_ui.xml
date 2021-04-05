@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/BlurImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/blurimages"/>
+    <ListView
+        android:id="@+id/ListView_derma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/TextView_Derma"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/TextView_Derma"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Select your desired doctor!"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:background="#804169e1"
+        />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="40dp"
+        android:layout_height="78dp"
+        android:src="@drawable/physician"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/TextView_Derma"/>
+</RelativeLayout>

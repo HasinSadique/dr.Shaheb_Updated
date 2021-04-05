@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.DocHomeUI">
+
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/BlurImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/backgroundwallpaper" />
+
+    <Button
+        android:id="@+id/Button_Appoinments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My appointments"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="showAppointments"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+
+        android:background="@drawable/roundedbutton"
+        android:layout_below="@+id/TextView_DocHomeUI_YourAppointments"
+        />
+
+    <ListView
+        android:id="@+id/ListView_DocHomeUI"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Button_Appoinments"
+        android:layout_above="@+id/boom"
+        android:layout_marginBottom="50dp"
+
+        />
+    <TextView
+        android:id="@+id/TextView_DocHomeUI_YourAppointments"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Your Appointments"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:background="#804169e1"
+        />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"
+        app:bmb_piecePlaceEnum="piecePlace_dot_3_1" />
+</RelativeLayout>

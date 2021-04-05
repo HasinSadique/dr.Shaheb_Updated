@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/BlurImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/blurimages"/>
+
+    <Button
+        android:id="@+id/ButtonConnect"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Connect me with"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#804169e1"
+        />
+
+    <ScrollView
+        android:id="@+id/ScrollViewPatientUI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/GeneralPhysician"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/roundshape"
+                android:onClick="GeneralPhysicianUI"
+                android:text="General Physician"
+                android:textColor="#191970"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/ChildSpecialist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundshape"
+                android:gravity="center"
+                android:onClick="ChildSpecialistUI"
+                android:text="Child Specialist"
+                android:textColor="#191970"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Gynecologist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="GynecologistUI"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundshape"
+                android:text="Gynecologist"
+                android:textColor="#191970"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/ENTSpecialist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundshape"
+                android:onClick="ENTSpecialistUI"
+                android:text="ENT Specialist"
+                android:textColor="#191970"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/Dermatologist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="DermatologistUI"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundshape"
+                android:text="Dermatologist"
+                android:textColor="#191970"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_piecePlaceEnum="piecePlace_dot_3_1"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"/>
+
+</RelativeLayout>

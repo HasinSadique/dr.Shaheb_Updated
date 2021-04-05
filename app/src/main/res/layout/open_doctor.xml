@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/BlurImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/blurimages"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/ImageView_Pic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/docicon"
+            />
+
+        <TextView
+            android:id="@+id/TextView_openDoc_NameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageView_Pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Name: "
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/TextView_openDoc_BMDCView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMDC number: "
+            android:layout_below="@+id/TextView_openDoc_NameView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/TextView_openDoc_MobileView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number: "
+            android:layout_below="@+id/TextView_openDoc_BMDCView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:id="@+id/ImageView_call"
+            android:src="@drawable/call"
+            android:layout_below="@id/TextView_openDoc_MobileView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="makeCall"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true"
+        />
+
+        <Button
+            android:id="@+id/Button_SetAppoinment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageView_call"
+            android:text="Set Appoinment"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:onClick="SetAppoinment"
+            android:background="@drawable/roundedbutton"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/Button_Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Button_SetAppoinment"
+            android:text="Message"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:onClick="Message"
+            android:background="@drawable/roundedbutton"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.open_appointment">
+
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/BlurImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/blurimages"/>
+    <ImageView
+        android:id="@+id/ImageView_Pic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/patienticon"
+        />
+    <TextView
+        android:id="@+id/TextView_openDoc_NameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Person's Email: "
+        android:layout_marginBottom="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+
+    <Button
+        android:id="@+id/Button_SetAppoinment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Button_CheckedAppoinment"
+        android:text="Cancel Appointment"
+        android:onClick="CancelAppoinment"
+        android:layout_margin="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/Button_CheckedAppoinment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_openDoc_NameView"
+        android:text="Complete"
+        android:onClick="CheckedAppoinment"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

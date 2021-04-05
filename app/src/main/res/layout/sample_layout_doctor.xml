@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:elevation="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:cardBackgroundColor="#A7C7DE"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundshape"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:id="@+id/ImageView_CardViewProPic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/docicon"
+                android:background="@drawable/img"
+                />
+            <TextView
+                android:id="@+id/TextView_NameShow"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:text="Name: Hasin"
+                android:layout_toRightOf="@id/ImageView_CardViewProPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/TextView_BMDCShow"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Bmdc: "
+                android:layout_alignLeft="@+id/TextView_NameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextView_NameShow"/>
+            <TextView
+                android:id="@+id/TextView_MobileNo.Show"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Mobile:"
+                android:layout_alignLeft="@id/TextView_NameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextView_BMDCShow"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
