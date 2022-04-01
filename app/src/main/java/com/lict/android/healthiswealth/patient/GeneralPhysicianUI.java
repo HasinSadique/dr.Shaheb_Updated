@@ -22,10 +22,13 @@ import com.lict.android.healthiswealth.R;
 import java.util.ArrayList;
 import java.util.List;
 
+//import javax.swing.text.html.ImageView;
+
 public class GeneralPhysicianUI extends AppCompatActivity {
 
     BlurImageView blurImageView;
     ImageView Image;
+
     private ListView listView;
     DatabaseReference databaseReference;
     private List<Doctor> doctorList;
